@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SSSM | Student Sign up</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="fontawesome/js/all.js"></script>
+  <style>
+
+
+
+.form-area{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: auto;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.8);
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h3,h4{
+    margin: 0;
+    padding: 10px 0 5px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-area p{
+    margin: 0;
+    padding-left: 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+
+.form-area input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-area input[type=text],
+.form-area input[type=date],
+.form-area input[type=email],
+.form-area input[type=mobile]
+{
+border: none;
+border-bottom: 1px solid #ffffff;
+background-color: transparent;
+outline: none;
+height: 40px;
+color: #ffffff;
+display: 160px;
+font-size: 15px;
+}
+
+::placeholder{
+    color:#ffff;
+    
+    }
+
+
+    .form-area input[type=submit]{
+        border: none;
+        height: 35px;
+        outline: none;
+        color:black;
+        font-size: 18px;
+        background-color:#ffffff;
+        cursor: pointer;
+        border-radius: 20px;
+        font-family: cursive;
+        
+        
+       
+
+    }
+
+    .form-area input[type=submit]:hover{
+        background-color: #e67300;
+        color:white;
+        transition: 0.3s;
+        font-size: 22px;
+        }
+
+.form-area select
+{
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+}
+.form-area option
+{
+    
+    background-color:transparent;
+    outline: none;
+    height: 40px;
+    
+
+}
+    div.radio-wrapper {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bolder;
+        color:white ;
+
+      }
+      
+      div.radio-container {
+        background-color: #e67300;
+        display: inline-block;
+        border: 2px solid #e67300;
+      }
+      
+      div.radio-container input[type=radio] {
+        opacity: 0;
+        display: none;
+        margin: 0;
+        outline: none;
+      }
+      
+      div.radio-container input[type="radio"]:checked+label {
+        background-color: #e67300;
+        color: white;
+        
+        animation-duration: 0.3s;
+      }
+      
+      @keyframes radio-active {
+        from {
+            transform: scale(1,1);
+        }
+        to {
+            transform: scale(1, 1);
+        }
+      }
+      
+      div.radio-container label {
+        padding: 0.5em;
+        cursor: pointer;
+        background: none;
+        display: inline-block;
+        outline: none;
+        letter-spacing: 0.3em;
+        background-color: white;
+        color: black;
+        transition: all ease-in-out 0.2s;
+      }
+
+
+
+
+.header_content
+    {
+        text-transform: uppercase;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        color: rgba(255,255,255,0.8);
+        transform: translate(-50% ,-50%);
+        font-family: cursive ;
+        
+    }
+    .form-area a  {
+        color:cyan;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .form-area a:hover{
+        color: rgb(255, 199, 116);
+       transition: 0.3s;
+       font-size: 16px;
+     
+    }
+
+  </style>
+  
+  
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>Create account</header>
+  <ul>
+    <li><a href="index.html"><i class="fas fa-qrcode"></i>  Dashboard</a></li>
+    <li><a href="Std_login.html"><i class="fas fa-user-graduate"></i>  Student</a></li>
+    <li><a href="Tea_login.html"><i class="fas fa-chalkboard-teacher"></i>  Faculty</a></li>
+     <li><a href="about.html"><i class="far fa-question-circle"></i>  About</a></li>
+    
+  </ul>
+</div>
+ <section>
+
+
+  <div class="header_content">
+    <div class="form-area">
+      <h3>create account</h3>
+ 
+         <form action="Sregs" method="post">
+             
+          <p>Name</p>
+          <input type="text" name="first_name"  placeholder="VINOD"pattern="[A-Za-z]{2,30}" required  title="2 or 30 character.Do Not Use Digits & Space" >
+          
+          <p>Last Name</p>
+          <input type="text" name="last_name"  placeholder="SAMBLE" pattern="[A-Za-z]{2,30}" required  title="2 or 30 character.Do Not Use Digits & Space">
+          
+          <p>Roll Number</p>
+          <input type="text" name="roll"  placeholder="Ex.0545CS171040" pattern="[0]{1}[5]{1}[4]{1}[5]{1}[C]{1}[S]{1}[0-9]{2}[0-9A-Z]{2}[0-9]{2}" required  title="Use Capital Letters & a Valid Roll Number">
+
+
+          <p>semester</p>
+          <select name="sem" required="required" title="plsease select a valid semester">
+              <option value="" disabled selected hidden>select Semsester</option>
+              <option value="1">I semester</option>
+              <option value="2">II semester</option>
+              <option value="3">III semester</option>
+              <option value="4">IV semester</option>
+              <option value="5">V semester</option>
+              <option value="6">VI semester</option>
+              <option value="7">VII semester</option>
+              <option value="8">VIII semester</option>
+          </select>
+
+          <br><br>
+          
+
+
+
+          <div class="radio-wrapper">
+              <p>GENDER</p><br>
+              <div class="radio-container">
+                  <input  type="radio" name="sex" value="m" id="male"checked="checked" />
+                  <label for="male">MALE</label>
+                  <input type="radio" name="sex" value="f" id="female" />
+                  <label for="female">FEMALE</label>
+              </div>
+</div>
+
+<p>DOB</p>
+          <input type="date" name="dob" max="2002-12-31" required>
+          <p>Email</p>
+          <input type="email" name="email"  placeholder="Exa@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$"  title="example123@gmail.com">
+          <p>Mobile</p>
+          <input type="mobile" name="mobile" placeholder="8771256897"   pattern="[6-9]{1}[0-9]{9}" required  title="without '+91' and 10 digit valid mobile no." >
+           <br><br>
+          
+              <input type="submit" value="Sign Up">
+              <h4>
+                <p>ALready have an account</p><a href="Std_login.html">Log in here</a>
+                </h4>
+
+         </form>
+         </div>
+ </div>
+ </section>
+
+  </body>
+</html>

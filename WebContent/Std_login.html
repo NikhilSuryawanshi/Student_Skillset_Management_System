@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SSSM | Student Log in</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="fontawesome/js/all.js"></script>
+  <style>
+    .header_content
+    {
+        text-transform: uppercase;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        color: rgba(255,255,255,0.8);
+        transform: translate(-50% ,-50%);
+        font-family: cursive ;
+        
+    }
+.form-area{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: auto;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.8);
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+h2,h4{
+    margin: 0;
+    padding: 10px 0 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-area p{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-left: 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+
+.form-area input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+::placeholder{
+    color:#ffff;
+    
+    }
+
+
+    .form-area input[type=submit]{
+      border: none;
+        height: 35px;
+        width: 190px;
+        text-align: center;
+        margin-left: 95px;
+        outline: none;
+        color:black;
+        background:linear-gradient(to right, rgb(0, 238, 255),rgb(97, 214, 87));
+        cursor: pointer;
+        border-radius: 20px;
+        font-family: cursive;
+        font-size: 18px;
+       }
+
+    .form-area input[type=submit]:hover{
+      background:linear-gradient(to right, rgb(0, 255, 170),rgb(87, 210, 214),rgb(106, 183, 255));
+        color:black;
+        transition: 0.4s;
+        font-size: 20px;
+        height: 38px;
+       border:  2px solid #ffffff;
+        }
+
+    .form-area a  {
+        color:cyan;
+        text-decoration: underline;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+       
+    }
+    .form-area a:hover{
+        color: rgb(255, 199, 116);
+       transition: 0.3s;
+       font-size: 18px;
+     
+    }
+    .form-area input[type=text],
+.form-area input[type=password]
+{
+border: none;
+border-bottom: 1px solid #ffffff;
+background-color: transparent;
+outline: none;
+height: 40px;
+color: #ffffff;
+display: 160px;
+font-size: 18px ;
+font-family: cursive;
+}
+
+
+  </style>
+  
+  
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>Student Log in</header>
+  <ul>
+    <li><a href="index.html"><i class="fas fa-qrcode"></i>  Dashboard</a></li>
+    <li><a href="Std_login.html"><i class="fas fa-user-graduate"></i>  Student</a></li>
+    <li><a href="Tea_login.html"><i class="fas fa-chalkboard-teacher"></i>  Faculty</a></li>
+    <li><a href="about.html"><i class="far fa-question-circle"></i>  About</a></li>
+   
+  </ul>
+</div>
+ <section>
+
+
+  <div class="header_content">
+    <div class="form-area">
+      <h2>LOGIN</h2>
+ <form action="Slogin" method="post">
+            
+            <p>Roll Number</p>
+            <input type="text" name="usr" required  title="Please enter valid roll number" placeholder="Ex.0545CS171038">
+
+            <p>Password</p>
+            <input type="password" name="pwd"  required placeholder="*******">
+
+             <input type="submit" value="Log In">
+             <h4>
+            <a href="Forgetpwd.html">Forgot Password ? </a><p>Not have an account</p><a href="Std_reg.html">Sign Up here</a>
+           </h4>
+        </form>
+         
+         </div>
+ </div>
+ </section>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
